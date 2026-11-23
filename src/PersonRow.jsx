@@ -3,7 +3,7 @@ import React from "react";
 class PersonRow extends React.Component {
 
     getClassName = (person) => {
-        return Number(person.age) > 65 ? "text-danger" : "";
+        return +person.age > 65 ? "table-danger" : "";
     }
 
     render() {
