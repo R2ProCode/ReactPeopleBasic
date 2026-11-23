@@ -26,12 +26,11 @@ class PeopleTable extends React.Component {
     onAddClick = () => {
         const copy = [...this.state.people];
         copy.push({
-            person: {
-                FirstName: this.state.currentPerson.FirstName,
-                LastName: this.state.currentPerson.LastName,
-                Age: this.state.currentPerson.Age
-            }
-        });
+            FirstName: this.state.currentPerson.FirstName,
+            LastName: this.state.currentPerson.LastName,
+            Age: this.state.currentPerson.Age
+        }
+        );
 
         this.setState({
             people: copy,
