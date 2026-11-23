@@ -75,7 +75,7 @@ class PeopleTable extends React.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.people.map(p => { return <PersonRow person={p} /> })}
+                                {this.state.people.map(p => <PersonRow person={p} /> )}
                             </tbody>
                         </table>)}
             </div>
