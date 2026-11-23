@@ -10,9 +10,9 @@ class PersonForm extends React.Component {
                             <input
                                 onChange={this.props.onPersonChange}
                                 type="text"
-                                value={this.props.currentPerson.FirstName}
+                                value={this.props.currentPerson.firstName}
                                 placeholder="First Name"
-                                name="FirstName"
+                                name="firstName"
                                 className="form-control"
                             />
                         </div>
@@ -21,9 +21,9 @@ class PersonForm extends React.Component {
                             <input
                                 onChange={this.props.onPersonChange}
                                 type="text"
-                                value={this.props.currentPerson.LastName}
+                                value={this.props.currentPerson.lastName}
                                 placeholder="Last Name"
-                                name="LastName"
+                                name="lastName"
                                 className="form-control"
                             />
                         </div>
@@ -32,9 +32,9 @@ class PersonForm extends React.Component {
                             <input
                                 onChange={this.props.onPersonChange}
                                 type="text"
-                                value={this.props.currentPerson.Age}
+                                value={this.props.currentPerson.age}
                                 placeholder="Age"
-                                name="Age"
+                                name="age"
                                 className="form-control"
                             />
                         </div>

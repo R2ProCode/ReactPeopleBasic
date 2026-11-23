@@ -7,9 +7,9 @@ class PeopleTable extends React.Component {
     state = {
         people: [],
         currentPerson: {
-            FirstName: "",
-            LastName: "",
-            Age: ""
+            firstName: "",
+            lastName: "",
+            age: ""
         }
     }
 
@@ -26,18 +26,18 @@ class PeopleTable extends React.Component {
     onAddClick = () => {
         const copy = [...this.state.people];
         copy.push({
-            FirstName: this.state.currentPerson.FirstName,
-            LastName: this.state.currentPerson.LastName,
-            Age: this.state.currentPerson.Age
+            firstName: this.state.currentPerson.firstName,
+            lastName: this.state.currentPerson.lastName,
+            age: this.state.currentPerson.age
         }
         );
 
         this.setState({
             people: copy,
             currentPerson: {
-                FirstName: "",
-                LastName: "",
-                Age: ""
+                firstName: "",
+                lastName: "",
+                age: ""
             }
         });
     }
@@ -46,9 +46,9 @@ class PeopleTable extends React.Component {
         this.setState({
             people: [],
             currentPerson: {
-                FirstName: "",
-                LastName: "",
-                Age: ""
+                firstName: "",
+                lastName: "",
+                age: ""
             }
         });
     }
